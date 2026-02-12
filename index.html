@@ -76,13 +76,25 @@ nav a:hover {
 }
 
 .brands {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 40px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
+
+.brands img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brands img:hover {
+  transform: scale(1.08);
+}
+
 
 .brands img {
   max-height: 80px;
@@ -150,7 +162,6 @@ footer {
 
 <section class="section">
   <h3>Our Distribution Chain</h3>
-  <div class="brands">
    <div class="brands">
   <img src="images/covestro.png" alt="Covestro">
   <img src="images/mepco.png" alt="Mepco">
