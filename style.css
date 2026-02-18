@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #ffffff;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+  border-bottom: 2px solid #1f6b3a;
+  background: #ffffff;
+}
+
+header img {
+  height: 120px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #1f6b3a;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #1f6b3a;
+}
+
+/* HERO */
+
+.hero {
+  padding: 180px 60px;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* BUTTON */
+
+.cta-btn {
+  display: inline-block;
+  background: #1f6b3a;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #15552c;
+  transform: translateY(-3px);
+}
+
+/* CREDIBILITY */
+
+.credibility {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 70px 40px;
+  background: #f8f8f8;
+}
+
+.cred-box h3 {
+  font-size: 28px;
+  color: #1f6b3a;
+}
+
+.cred-box p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 80px 60px;
+}
+
+.section h3 {
+  color: #1f6b3a;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.section p {
+  max-width: 900px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* BRANDS */
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.brands img {
+  max-height: 80px;
+  transition: 0.3s;
+}
+
+.brands img:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+
+footer {
+  background: #1f6b3a;
+  color: #fff;
+  padding: 40px 60px;
+  font-size: 15px;
+  text-align: center;
+}
