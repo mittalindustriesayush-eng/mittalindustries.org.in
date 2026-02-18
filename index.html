@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <title>Mittal Industries | Since 1994</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #222;
   background: #ffffff;
 }
@@ -38,34 +39,40 @@ nav a:hover {
 }
 
 .hero {
-  padding: 140px 60px;
+  padding: 180px 60px;
   background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
               url('images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 20px;
+  animation: fadeUp 1.2s ease forwards;
 }
 
 .hero h2 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 26px;
+  font-weight: 300;
   margin-bottom: 30px;
   opacity: 0.9;
+  animation: fadeUp 1.6s ease forwards;
 }
 
-
-
 .hero p {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
+  max-width: 850px;
+  margin: 0 auto 50px auto;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.8;
+  opacity: 0.9;
+  animation: fadeUp 2s ease forwards;
 }
 
 .section {
@@ -120,29 +127,62 @@ footer {
   padding: 30px 60px;
   font-size: 15px;
 }
-  .cta-btn {
-  display: inline-block;
-  background: #1f6b3a;
-  color: #fff;
-  padding: 14px 28px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
 
-.cta-btn:hover {
-  background: #15552c;
-  transform: translateY(-2px);
-}
   .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.credibility {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 60px 40px;
+  background: #f8f8f8;
+}
 
+.cred-box h3 {
+  font-size: 28px;
+  color: #1f6b3a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cred-box p {
+  font-size: 15px;
+  color: #555;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #1f6b3a;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  animation: fadeUp 2.4s ease forwards;
+}
+
+.cta-btn:hover {
+  background: #15552c;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
 </style>
 </head>
 
@@ -173,6 +213,22 @@ India’s most reliable and respected suppliers in the diamond tools raw materia
   <br><br>
 <a href="distribution.html" class="cta-btn">View Our Distribution Network</a>
 
+</section>
+<section class="credibility">
+  <div class="cred-box">
+    <h3>Since 1994</h3>
+    <p>30+ Years of Industry Leadership</p>
+  </div>
+
+  <div class="cred-box">
+    <h3>₹60+ Crore</h3>
+    <p>Annual Revenue</p>
+  </div>
+
+  <div class="cred-box">
+    <h3>Nationwide Network</h3>
+    <p>Trusted Distribution Across India</p>
+  </div>
 </section>
 
 <section class="section">
