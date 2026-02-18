@@ -239,3 +239,10 @@ footer {
     color: white;
     margin-top: 80px;
 }
+.brands a {
+  display: inline-block;
+}
+
+.brands img {
+  cursor: pointer;
+}
