@@ -149,3 +149,33 @@ footer {
   font-size: 15px;
   text-align: center;
 }
+.page-hero {
+  padding: 120px 60px;
+  text-align: center;
+  background: #1f6b3a;
+  color: white;
+}
+
+.page-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.page-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  border: none;
+  cursor: pointer;
+}
