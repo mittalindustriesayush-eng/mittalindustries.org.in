@@ -289,3 +289,52 @@ footer {
 .section p {
   text-align: left;
 }
+/* INDUSTRIES SECTION */
+
+.industries {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.industries h2 {
+  font-size: 38px;
+  margin-bottom: 60px;
+  color: #1f6b3a;
+  text-align: center;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.industry-card {
+  padding: 40px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.industry-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1f6b3a;
+}
+
+.industry-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
