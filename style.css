@@ -204,12 +204,13 @@ form button {
 }
 
 footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: #111;
-    color: white;
-    margin-top: 80px;
+  background: #1f6b3a;
+  color: #fff;
+  padding: 40px 60px;
+  font-size: 15px;
+  text-align: center;
 }
+
 .brands a {
   display: inline-block;
 }
