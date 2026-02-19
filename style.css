@@ -338,3 +338,18 @@ footer {
   color: #555;
   line-height: 1.6;
 }
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.logo-grid img {
+  max-width: 160px;
+  max-height: 80px;
+  margin: auto;
+  object-fit: contain;
+}
