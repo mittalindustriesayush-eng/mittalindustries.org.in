@@ -1,133 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Products | Mittal Industries</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore Mittal Industries' comprehensive range of diamond tools raw materials, iron powders, metal powders and specialty industrial solutions.">
+<meta charset="UTF-8">
+<title>Products | Mittal Industries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1c1c1c;
+}
+
+/* ===== PAGE HEADER ===== */
+
+.page-header {
+  padding: 100px 8% 60px;
+  background: linear-gradient(135deg, #0f2b1b, #1f6b3a);
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+/* ===== PRODUCT SECTION ===== */
+
+.product-section {
+  padding: 80px 8%;
+  border-bottom: 1px solid #f1f1f1;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.product-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-section h2 {
+  font-size: 34px;
+  color: #1f6b3a;
+  margin-bottom: 30px;
+}
+
+.product-block {
+  margin-bottom: 50px;
+}
+
+.product-block h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.product-block p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.enquire-btn {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1px solid #1f6b3a;
+  color: #1f6b3a;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.enquire-btn:hover {
+  background: #1f6b3a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px) {
+  .page-header h1 {
+    font-size: 30px;
+  }
+
+  .product-section {
+    padding: 60px 6%;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <a href="index.html">
-    <img src="images/logo.png" alt="Mittal Industries Logo">
-  </a>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="distribution.html">Distribution Chain</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<section class="page-hero">
+<div class="page-header">
   <h1>Our Product Portfolio</h1>
-  <p>Comprehensive range of diamond tools raw materials and industrial powders.</p>
-</section>
+</div>
 
 <!-- COVESTRO -->
-<section class="section" id="covestro">
+<section class="product-section" id="covestro">
   <h2>Covestro</h2>
-  <div class="product-grid">
 
-    <div class="product-card">
-      <h3>Thermoplastic Polyurethane Systems</h3>
-      <p>High-performance TPU materials for demanding industrial applications.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
+  <div class="product-block">
+    <h3>Thermoplastic Polyurethane Systems</h3>
+    <p>
+      High-performance TPU materials engineered for demanding industrial
+      applications requiring durability, elasticity and strength.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
+  </div>
 
-    <div class="product-card">
-      <h3>Specialty Grades</h3>
-      <p>Advanced TPU and polycarbonate solutions for precision manufacturing.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
-
+  <div class="product-block">
+    <h3>Specialty Grades</h3>
+    <p>
+      Advanced TPU and polycarbonate solutions tailored for precision
+      manufacturing environments.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
   </div>
 </section>
 
 <!-- MEPCO -->
-<section class="section" id="mepco">
+<section class="product-section" id="mepco">
   <h2>Mepco</h2>
-  <div class="product-grid">
 
-    <div class="product-card">
-      <h3>Metal Powders</h3>
-      <p>High-purity powders engineered for diamond tool production.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
-
+  <div class="product-block">
+    <h3>Metal Powders</h3>
+    <p>
+      High-purity powders engineered specifically for diamond tool
+      production and industrial metallurgy applications.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
   </div>
 </section>
 
 <!-- RAPICUT -->
-<section class="section" id="rapicut">
+<section class="product-section" id="rapicut">
   <h2>Rapicut</h2>
-  <div class="product-grid">
 
-    <div class="product-card">
-      <h3>Diamond Blade Raw Materials</h3>
-      <p>Tungsten carbide and tungsten metal for high-efficiency cutting tools.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
-
+  <div class="product-block">
+    <h3>Diamond Cutting Solutions</h3>
+    <p>
+      Precision-engineered materials designed to enhance performance
+      in cutting, grinding and finishing applications.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
   </div>
 </section>
 
 <!-- IMP -->
-<section class="section" id="imp">
+<section class="product-section" id="imp">
   <h2>IMP</h2>
-  <div class="product-grid">
 
-    <div class="product-card">
-      <h3>Industrial Iron Powders</h3>
-      <p>Electrolytic and atomised iron powders for diamond tool manufacturing.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
-
+  <div class="product-block">
+    <h3>Industrial Raw Materials</h3>
+    <p>
+      Reliable, high-grade industrial materials supporting consistent
+      manufacturing excellence across sectors.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
   </div>
 </section>
 
-<!-- PETREL PLUS -->
-<section class="section" id="petrelplus">
-  <h2>Petrel Plus</h2>
-  <div class="product-grid">
+<!-- PETRELPLUS -->
+<section class="product-section" id="petrelplus">
+  <h2>Petrelplus</h2>
 
-    <div class="product-card">
-      <h3>Specialty Industrial Lubricants</h3>
-      <p>Enhancing performance and durability of every machine.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
-
+  <div class="product-block">
+    <h3>Advanced Additives & Solutions</h3>
+    <p>
+      Performance-enhancing solutions crafted to meet modern industrial
+      production requirements.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
   </div>
 </section>
 
 <!-- HOGANAS -->
-<section class="section" id="hoganas">
+<section class="product-section" id="hognas">
   <h2>Höganäs</h2>
-  <div class="product-grid">
 
-    <div class="product-card">
-      <h3>Iron Powder Solutions</h3>
-      <p>Premium-grade powders for structural and diamond tool applications.</p>
-      <a href="contact.html" class="enquiry-btn">Enquire Now</a>
-    </div>
-
+  <div class="product-block">
+    <h3>Metal Powder Technologies</h3>
+    <p>
+      World-class powder metallurgy materials engineered for superior
+      structural and tooling applications.
+    </p>
+    <a href="contact.html" class="enquire-btn">Enquire Now</a>
   </div>
 </section>
 
-<footer>
-  <strong>Mittal Industries</strong><br>
-  Premium Diamond Tools Raw Materials Supplier since 1994<br><br>
-  📞 +91 9680023458 | +91 9414043956<br>
-  ✉️ mittalco1968@gmail.com | mittalindustries.ayush@gmail.com<br><br>
-  © 1994–2026 Mittal Industries. All Rights Reserved.
-</footer>
+<script>
+
+/* ===== SCROLL REVEAL ANIMATION ===== */
+
+const sections = document.querySelectorAll('.product-section');
+
+const reveal = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  sections.forEach(section => {
+    const boxTop = section.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      section.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', reveal);
+
+</script>
 
 </body>
 </html>
