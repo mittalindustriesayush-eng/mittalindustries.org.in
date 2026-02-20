@@ -168,21 +168,12 @@ form button {
 
 
 
-
-}
-
 .section h2 {
     font-size: 32px;
     margin-bottom: 40px;
 }
 
-.logo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 40px;
-    align-items: center;
-    justify-items: center;
-}
+
 
 .logo-grid img {
     max-width: 160px;
@@ -352,4 +343,19 @@ footer {
   max-height: 80px;
   margin: auto;
   object-fit: contain;
+}
+@media (max-width: 768px) {
+  .industry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credibility {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
