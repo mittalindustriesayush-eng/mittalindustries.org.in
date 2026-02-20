@@ -1,166 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mittal Industries | Since 1994</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mittal Industries is a premium diamond tools raw materials supplier since 1994. Authorised distributor of global brands with nationwide industrial supply network across India.">
+<meta charset="UTF-8">
+<title>Mittal Industries | Premium Diamond Tools Raw Materials Supplier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #ffffff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+header img {
+  height: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: #222;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #1f6b3a;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  background: linear-gradient(135deg, #0f2b1b, #1f6b3a);
+  color: white;
+  text-align: center;
+  padding: 130px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+/* ===== DISTRIBUTION SECTION ===== */
+
+.distribution-section {
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.distribution-section h2 {
+  font-size: 36px;
+  color: #1f6b3a;
+  margin-bottom: 60px;
+}
+
+/* GRID FIXED PROPERLY */
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.logo-card {
+  background: #ffffff;
+  padding: 40px 20px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.logo-card:hover {
+  transform: translateY(-5px);
+}
+
+.logo-card img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  background: #0f2b1b;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+@media(max-width:768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919680023458" 
-   class="whatsapp-float" 
-   target="_blank" 
-   rel="noopener">
-   WhatsApp Us
-</a>
-
-<!-- HEADER -->
 <header>
   <img src="images/logo.png" alt="Mittal Industries Logo">
-
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
     <a href="distribution.html">Distribution Chain</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
-  <h1>Mittal Industries</h1>
-  <h2>India’s Trusted Diamond Tools Raw Materials Partner Since 1994</h2>
-
+  <h1>Premium Diamond Tools Raw Materials Supplier Since 1994</h1>
   <p>
-    Mittal Industries is a distinguished supplier of premium diamond tools raw materials,
-    serving the industry with excellence since 1994. Built on trust, technical
-    expertise, and uncompromising quality, Mittal Industries stands among
-    India’s most reliable and respected suppliers in the diamond tools raw materials sector.
-  </p>
-
-  <a href="distribution.html" class="cta-btn">
-    View Our Distribution Network
-  </a>
-</section>
-
-<!-- CREDIBILITY -->
-<section class="credibility">
-  <div class="cred-box">
-    <h3>Since 1994</h3>
-    <p>30+ Years of Industry Leadership</p>
-  </div>
-
-  <div class="cred-box">
-    <h3>Robust Supply Infrastructure</h3>
-    <p>Seamless Fulfilment of High-Volume Industrial Demands</p>
-  </div>
-
-  <div class="cred-box">
-    <h3>Nationwide Network</h3>
-    <p>Trusted Distribution Across India</p>
-  </div>
-</section>
-
-<!-- INDUSTRIES -->
-<section class="industries">
-  <div class="container">
-    <h2>Industries We Serve</h2>
-
-    <div class="industry-grid">
-
-      <div class="industry-card">
-        <h3>Diamond Tool Manufacturers</h3>
-        <p>Supplying premium raw materials for blades, segments and cutting tools.</p>
-      </div>
-
-      <div class="industry-card">
-        <h3>Stone Processing Industry</h3>
-        <p>High-performance inputs ensuring durability and precision.</p>
-      </div>
-
-      <div class="industry-card">
-        <h3>Metal Powder Manufacturers</h3>
-        <p>Industrial-grade powders for structural and tool applications.</p>
-      </div>
-
-      <div class="industry-card">
-        <h3>Industrial Fabricators</h3>
-        <p>Reliable supply solutions for large-scale manufacturing demands.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section">
-  <h3>About Mittal Industries</h3>
-  <p>
-    Founded and single-handedly built by <strong>Mr. Surendra Mittal</strong>,
-    Mittal Industries has grown steadily under his vision, discipline,
-    and deep industry understanding.
+    Mittal Industries is a trusted and leading supplier of high-quality diamond tools raw materials 
+    and metal powders, serving manufacturers across India with reliability and excellence.
   </p>
 </section>
 
-<!-- DISTRIBUTION CHAIN -->
-<section class="section">
-  <h3>Our Distribution Chain</h3>
+<!-- DISTRIBUTION SECTION -->
+<section class="distribution-section">
+  <h2>Our Distribution Chain</h2>
 
-  <div class="brands">
-    <a href="products.html#covestro">
+  <div class="logo-grid">
+
+    <div class="logo-card">
       <img src="images/covestro.png" alt="Covestro">
-    </a>
+    </div>
 
-    <a href="products.html#mepco">
+    <div class="logo-card">
       <img src="images/mepco.png" alt="Mepco">
-    </a>
+    </div>
 
-    <a href="products.html#rapicut">
+    <div class="logo-card">
       <img src="images/rapicut.png" alt="Rapicut">
-    </a>
+    </div>
 
-    <a href="products.html#imp">
+    <div class="logo-card">
       <img src="images/imp.png" alt="IMP">
-    </a>
+    </div>
 
-    <a href="products.html#petrelplus">
-      <img src="images/petrelplus.png" alt="Petrel Plus">
-    </a>
+    <div class="logo-card">
+      <img src="images/petrelplus.png" alt="Petrelplus">
+    </div>
 
-    <a href="products.html#hoganas">
-      <img src="images/hoganas.png" alt="Hoganas">
-    </a>
+    <div class="logo-card">
+      <img src="images/hognas.png" alt="Hoganas">
+    </div>
+
   </div>
 </section>
 
-<!-- CTA SECTION -->
-<section class="section" style="background:#f4f6f5; text-align:center;">
-  <h3>Looking for Reliable Industrial Supply?</h3>
-  <p>
-    Partner with Mittal Industries for consistent quality, certified sourcing,
-    and large-scale fulfilment capability.
-  </p>
-
-  <a href="contact.html" class="cta-btn">
-    Request Business Enquiry
-  </a>
-</section>
-
-<!-- FOOTER -->
 <footer>
   <strong>Mittal Industries</strong><br>
-  Premium Diamond Tools Raw Materials Supplier since 1994<br><br>
-  📍 India<br>
-  📞 +91 9680023458 | +91 9414043956<br>
-  ✉️ mittalindustries.ayush@gmail.com<br><br>
-  © 1994–2026 Mittal Industries. All Rights Reserved.
+  Premium Diamond Tools Raw Materials Supplier | Since 1994
 </footer>
 
 </body>
