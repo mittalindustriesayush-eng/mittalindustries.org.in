@@ -4,8 +4,108 @@
 <meta charset="UTF-8">
 <title>About Us | Mittal Industries</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ===== ABOUT PAGE ELITE STYLING ===== */
+
+.about-hero {
+  background: linear-gradient(135deg, #0f2b1b, #1f6b3a);
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+.about-section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #1f6b3a;
+}
+
+.about-section p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.highlight-box {
+  background: #f4f8f5;
+  padding: 40px;
+  border-left: 5px solid #1f6b3a;
+  margin: 60px 0;
+}
+
+.team-section {
+  background: #fafafa;
+  padding: 100px 20px;
+}
+
+.team-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.team-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #1f6b3a;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.team-card {
+  background: white;
+  padding: 40px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.team-card p {
+  color: #777;
+  font-size: 15px;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -20,13 +120,91 @@
   </nav>
 </header>
 
-<section class="section">
-  <h3>About Mittal Industries</h3>
+<!-- HERO SECTION -->
+<section class="about-hero">
+  <h1>Legacy. Leadership. Excellence.</h1>
   <p>
-    Established in 1994, Mittal Industries is a premium supplier of diamond tools raw materials in India.
-    Built single-handedly by Mr. Surendra Mittal, the company has grown into one of the most respected names
-    in the industry through discipline, trust and consistent quality.
+    For over three decades, Mittal Industries has defined reliability and leadership 
+    in the diamond tools raw materials industry across India.
   </p>
+</section>
+
+<!-- COMPANY STORY -->
+<section class="about-section">
+
+  <h2>Our Journey Since 1994</h2>
+
+  <p>
+    Established in 1994, Mittal Industries began as a vision driven by determination 
+    and unwavering belief. Founded single-handedly by <strong>Mr. Surendra Mittal</strong>, 
+    the company was built from the ground up through perseverance, discipline, and 
+    uncompromising business ethics.
+  </p>
+
+  <p>
+    In its early years, the journey was marked by market challenges, financial constraints, 
+    and industry competition. Yet, through resilience and integrity, Mr. Mittal transformed 
+    obstacles into stepping stones — steadily building credibility, partnerships, and trust.
+  </p>
+
+  <p>
+    Today, Mittal Industries stands as one of India’s most respected and trusted suppliers 
+    of premium diamond tools raw materials and metal powders, serving manufacturers 
+    with precision-engineered materials that meet global standards.
+  </p>
+
+  <div class="highlight-box">
+    <p>
+      What started as a single man’s entrepreneurial commitment has evolved into a 
+      structured, professionally managed organization recognized for reliability, 
+      ethical trade practices, and long-term partnerships.
+    </p>
+  </div>
+
+  <h2>Industry Leadership</h2>
+
+  <p>
+    Over three decades, we have positioned ourselves as a top raw material supplier in India’s 
+    diamond tools ecosystem. As authorized distributors of globally reputed brands, 
+    we ensure consistent quality, technical reliability, and supply chain efficiency.
+  </p>
+
+  <p>
+    Our longevity in the industry is not accidental — it is the result of sustained performance, 
+    transparent dealings, and an unwavering commitment to customer success.
+  </p>
+
+</section>
+
+<!-- TEAM SECTION -->
+<section class="team-section">
+  <div class="team-container">
+    <h2>Leadership & Core Management</h2>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <h3>Mr. Surendra Mittal</h3>
+        <p>Founder & Proprietor</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Mr. Aashish Sharma</h3>
+        <p>Head Manager</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Mrs. Shikha Saxena</h3>
+        <p>Accounts Head</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Mr. Gajendra Singh Rajpoot</h3>
+        <p>Operations Manager</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <footer>
