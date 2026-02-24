@@ -196,32 +196,6 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* ============================= */
-/* BRANDS / LOGOS */
-/* ============================= */
-
-.brands {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  margin-top: 50px;
-  flex-wrap: wrap;
-}
-
-.brands a {
-  display: inline-block;
-}
-
-.brands img {
-  max-height: 80px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.brands img:hover {
-  transform: scale(1.1);
-}
 
 /* Distribution page grid version */
 
@@ -367,4 +341,51 @@ footer {
     gap: 20px;
   }
 
+}
+/* ============================= */
+/* PREMIUM DISTRIBUTION LOGOS   */
+/* ============================= */
+
+.brands {
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+}
+
+.brands a {
+  width: 180px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  transition: all 0.35s ease;
+}
+
+.brands a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.brands img {
+  max-width: 140px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: all 0.35s ease;
+}
+
+.brands a:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
 }
