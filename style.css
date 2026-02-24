@@ -10,40 +10,65 @@ body {
 }
 
 /* ============================= */
-/* HEADER – ELITE VERSION        */
+/* PREMIUM CORPORATE HEADER      */
+/* (NON-STICKY – SCROLLS AWAY)   */
 /* ============================= */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 80px;
+  padding: 22px 90px;
   background: #ffffff;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.04);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 header img {
-  height: 95px;        /* Increased properly */
+  height: 105px;   /* Strong premium presence */
   width: auto;
   display: block;
 }
 
+/* Navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
-  margin-left: 35px;
+  margin-left: 45px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 16px;
-  color: #222;
-  transition: 0.3s ease;
-  letter-spacing: 0.5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Elegant underline animation */
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 2px;
+  background: #1f6b3a;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
   color: #1f6b3a;
 }
+
+nav a:hover::after {
+  width: 100%;
+}
+
 
 
 /* ============================= */
