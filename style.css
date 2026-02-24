@@ -10,32 +10,41 @@ body {
 }
 
 /* ============================= */
-/* HEADER */
+/* HEADER – ELITE VERSION        */
 /* ============================= */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background: white;
+  padding: 18px 80px;
+  background: #ffffff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header img {
-  height: 60px;
+  height: 95px;        /* Increased properly */
   width: auto;
+  display: block;
 }
 
 nav a {
-  margin-left: 25px;
+  margin-left: 35px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
   color: #222;
+  transition: 0.3s ease;
+  letter-spacing: 0.5px;
 }
 
 nav a:hover {
   color: #1f6b3a;
 }
+
 
 /* ============================= */
 /* HERO SECTION */
