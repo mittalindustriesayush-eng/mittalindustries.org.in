@@ -343,49 +343,49 @@ footer {
 
 }
 /* ============================= */
-/* PREMIUM DISTRIBUTION LOGOS   */
+/* LARGE PREMIUM DISTRIBUTION LOGOS */
 /* ============================= */
 
 .brands {
-  max-width: 1200px;
-  margin: 60px auto 0 auto;
+  max-width: 1400px;
+  margin: 80px auto 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 70px;
   align-items: center;
   justify-items: center;
 }
 
 .brands a {
-  width: 180px;
-  height: 90px;
+  width: 260px;
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 20px;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 14px;
   transition: all 0.35s ease;
 }
 
 .brands a:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
 .brands img {
-  max-width: 140px;
-  max-height: 60px;
+  max-width: 220px;
+  max-height: 100px;
   width: auto;
   height: auto;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.85;
+  opacity: 0.9;
   transition: all 0.35s ease;
 }
 
 .brands a:hover img {
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
