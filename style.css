@@ -27,7 +27,16 @@ header img {
   height: 105px;   /* Strong premium presence */
   width: auto;
   display: block;
+  /* Logo Vertical Alignment Fix */
+
+header {
+  padding-bottom: 5px;  /* reduces bottom air */
 }
+
+header img {
+  margin-bottom: -8px;  /* pulls logo slightly down */
+}
+
 
 /* Navigation */
 
