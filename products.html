@@ -59,6 +59,7 @@ body {
   opacity: 0;
   transform: translateY(60px);
   transition: all 1s ease;
+  overflow: hidden;
 }
 
 .product-section.visible {
@@ -82,6 +83,64 @@ body {
   width: 60px;
   height: 4px;
   background: #1e5f36;
+  z-index: 2;
+}
+
+/* ===== WATERMARK BACKGROUND (Products Page Only) ===== */
+
+.product-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.07; /* 5–10% opacity */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Individual Logos */
+
+#covestro::after {
+  background-image: url('images/covestro.png');
+}
+
+#mepco::after {
+  background-image: url('images/mepco.png');
+}
+
+#rapicut::after {
+  background-image: url('images/rapicut.png');
+}
+
+#imp::after {
+  background-image: url('images/imp.png');
+}
+
+#petrelplus::after {
+  background-image: url('images/petrelplus.png');
+}
+
+#hognas::after {
+  background-image: url('images/hognas.png');
+}
+
+#cilbond::after {
+  background-image: url('images/cilbond.png');
+}
+
+/* Ensure Content Stays Above Watermark */
+
+.product-section h2,
+.product-block,
+.enquire-btn {
+  position: relative;
+  z-index: 2;
 }
 
 .product-section h2 {
@@ -151,144 +210,12 @@ body {
   .product-section::before {
     left: 6%;
   }
+
+  .product-section::after {
+    width: 260px;
+    height: 260px;
+  }
 }
 
 </style>
 </head>
-
-<body>
-
-<div class="page-header">
-  <h1>Our Product Portfolio</h1>
-</div>
-
-<!-- COVESTRO -->
-<section class="product-section" id="covestro">
-  <h2>Covestro</h2>
-
-  <div class="product-block">
-    <h3>Thermoplastic Polyurethane Systems</h3>
-    <p>
-      High-performance TPU materials engineered for demanding industrial
-      environments where durability, elasticity and structural integrity
-      are critical.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-
-  <div class="product-block">
-    <h3>Specialty Grades</h3>
-    <p>
-      Advanced TPU and polycarbonate solutions designed for precision
-      manufacturing and high-performance applications.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-
-<!-- MEPCO -->
-<section class="product-section" id="mepco">
-  <h2>Mepco</h2>
-
-  <div class="product-block">
-    <h3>Metal Powders</h3>
-    <p>
-      High-purity powders developed for diamond tool production,
-      ensuring strength, uniformity and superior metallurgical consistency.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-
-<!-- RAPICUT -->
-<section class="product-section" id="rapicut">
-  <h2>Rapicut</h2>
-
-  <div class="product-block">
-    <h3>Diamond Cutting Solutions</h3>
-    <p>
-      Performance-driven materials supporting advanced cutting,
-      grinding and finishing operations across industries.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-
-<!-- IMP -->
-<section class="product-section" id="imp">
-  <h2>IMP</h2>
-
-  <div class="product-block">
-    <h3>Industrial Raw Materials</h3>
-    <p>
-      Reliable, high-grade industrial raw materials supporting
-      consistent and scalable manufacturing excellence.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-
-<!-- PETRELPLUS -->
-<section class="product-section" id="petrelplus">
-  <h2>Petrelplus</h2>
-
-  <div class="product-block">
-    <h3>Advanced Additives & Solutions</h3>
-    <p>
-      Innovative additive technologies tailored for enhanced
-      performance, stability and durability in industrial processes.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-
-<!-- HOGANAS -->
-<section class="product-section" id="hognas">
-  <h2>Höganäs</h2>
-
-  <div class="product-block">
-    <h3>Metal Powder Technologies</h3>
-    <p>
-      Globally trusted powder metallurgy solutions engineered
-      for high-strength structural and tooling applications.
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-<!-- CILBOND -->
-<section class="product-section" id="cilbond">
-  <h2>Cilbond</h2>
-
-  <div class="product-block">
-    <h3>industrial grade adhesive</h3>
-    <p>
-      high temprature adhesives for metal to TPU bonding
-    </p>
-    <a href="contact.html" class="enquire-btn">Enquire Now</a>
-  </div>
-</section>
-<script>
-
-/* ===== SCROLL REVEAL ===== */
-
-const sections = document.querySelectorAll('.product-section');
-
-function revealSections() {
-  const trigger = window.innerHeight * 0.85;
-
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-
-    if (top < trigger) {
-      section.classList.add('visible');
-    }
-  });
-}
-
-window.addEventListener('scroll', revealSections);
-window.addEventListener('load', revealSections);
-
-</script>
-
-</body>
-</html>
